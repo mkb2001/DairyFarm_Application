@@ -8,7 +8,7 @@ import '../model/Utils.dart';
 import '../screens/stock_items/StockItemDetailsScreen.dart';
 
 Widget roundedImage(String url, double w, double h,
-    {String no_image = 'assets/images/logo.png', double radius = 10}) {
+    {String no_image = 'assets/images/cow.jpg', double radius = 10}) {
   return ClipRRect(
     borderRadius: BorderRadius.circular(radius),
     child: Image.network(url),

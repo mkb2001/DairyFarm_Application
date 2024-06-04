@@ -54,7 +54,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 Container(
                   child: Image.asset(
-                    Img.get('logo.png'),
+                    Img.get('cow.jpg'),
                   ),
                   width: 100,
                   height: 100,

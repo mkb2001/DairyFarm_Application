@@ -19,7 +19,7 @@ class AboutScreen extends StatelessWidget {
               // App Logo (replace with your logo image)
               Center(
                 child: Image.asset(
-                  'assets/images/logo.png',
+                  'assets/images/cow.jpg',
                   // Replace with your image path
                   height: 100.0,
                   width: 100.0,
@@ -31,6 +31,8 @@ class AboutScreen extends StatelessWidget {
               Text(
                 'Invetortrack is a mobile app and web dashboard system designed to empower you with efficient inventory management.',
                 style: TextStyle(fontSize: 16.0),
+
+
               ),
               SizedBox(height: 10.0),
 

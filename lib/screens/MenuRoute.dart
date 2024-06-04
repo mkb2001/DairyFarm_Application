@@ -5,18 +5,23 @@ import 'package:home_app_2/model/ContributionRecordModel.dart';
 import 'package:home_app_2/model/LoggedInUser.dart';
 import 'package:home_app_2/model/StockItemModel.dart';
 import 'package:home_app_2/screens/Auth/LandingScreen.dart';
+import 'package:home_app_2/screens/reports/FinancialReportsScreen.dart';
 import 'package:home_app_2/screens/stock_categories/StockCategoriesScreen.dart';
 import 'package:home_app_2/screens/stock_categories/StockSubCategoriesScreen.dart';
 import 'package:get/get.dart';
+import 'package:home_app_2/screens/stock_items/StockItemsScreen.dart';
+import 'package:home_app_2/screens/stock_records/StockRecordsScreen.dart';
 
 import '../../model/Utils.dart';
 
+import '../widget/widgets.dart';
 import 'Common/AboutScreen.dart';
 import 'Common/ContactUsScreen.dart';
 import 'MenuRoute2.dart';
 import 'budget_management/budget/BudgetItemCategoriesScreen.dart';
 import 'budget_management/contributions/ContributionRecordsScreen.dart';
 import 'employees/EmployeesScreen.dart';
+import 'finance/TransactionList.dart';
 import 'financial_periods/FinancialPeriodsScreen.dart';
 
 class MenuRoute extends StatefulWidget {
@@ -71,7 +76,7 @@ class _MenuRouteState extends State<MenuRoute> {
           )
         ],
       ),
-      body: true
+      body: false
           ? RefreshIndicator(
               onRefresh: () async {
                 await myInit();
@@ -130,7 +135,7 @@ class _MenuRouteState extends State<MenuRoute> {
                                       SizedBox(
                                         height: 15,
                                       ),
-                                      /*Row(
+                                      Row(
                                         children: [
                                           SizedBox(
                                             width: 15,
@@ -239,7 +244,7 @@ class _MenuRouteState extends State<MenuRoute> {
                                                 color: MyColors.primary,
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.w900),
-                                          )),*/
+                                          )),
                                     ],
                                   ),
                                 ),
@@ -249,14 +254,14 @@ class _MenuRouteState extends State<MenuRoute> {
                       childCount: 1, // 1000 list items
                     ),
                   ),
-                  /* SliverList(
+                  SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (BuildContext context, int index) {
-                        return stockItemTile(stole_items[index], false);
+                        return null;
                       },
                       childCount: stole_items.length, // 1000 list items
                     ),
-                  ),*/
+                  ),
                 ],
               ),
             )
